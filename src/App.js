@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import "./App.css";
-import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
-import Main from "./components/main";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import './App.css';
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import Main from './components/main';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -12,31 +12,31 @@ class App extends Component {
           <Header
             className="header-color"
             title={
-              <Link style={{ textDecoration: "none", color: "white" }} to="/">
-                MyPortfolio
+              <Link style={{ textDecoration: 'none', color: 'white' }} to="/">
+                Ram Mahajan
               </Link>
             }
             scroll
           >
             <Navigation>
               <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/about">About</Link>
+              {/* <Link to="/projects">Projects</Link> */}
+              {/* <Link to="/contact">Contact</Link> */}
             </Navigation>
           </Header>
           <Drawer
             title={
-              <Link style={{ textDecoration: "none", color: "black" }} to="/">
-                MyPortfolio
+              <Link style={{ textDecoration: 'none', color: 'black' }} to="/">
+                Ram Mahajan
               </Link>
             }
           >
-            <Navigation>
+            <Navigation className>
               <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/about">About</Link>
+              {/* <Link to="/projects">Projects</Link> */}
+              {/* <Link to="/contact">Contact</Link> */}
             </Navigation>
           </Drawer>
           <Content>
